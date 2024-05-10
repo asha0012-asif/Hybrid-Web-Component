@@ -1,0 +1,25 @@
+body {
+    margin: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+    background-color: lightblue;
+    padding: 1rem;
+}
+
+li:where(:hover, :focus-visible) {
+    background-color: hsl(195, 43%, 89%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
